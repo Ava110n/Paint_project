@@ -22,6 +22,7 @@ namespace Paint_3._0
         int index;
         int x, y, sx, sy, cx, cy;
         ColorDialog cd = new ColorDialog();
+        int test_param;
 
 
         public Form1()
@@ -41,17 +42,17 @@ namespace Paint_3._0
 
         private void btnellipse_Click(object sender, EventArgs e)
         {
-            index = 10;
+            index = 7;
         }
 
         private void btnrect_Click(object sender, EventArgs e)
         {
-            index = 4;
+            index = 2;
         }
 
         private void btnline_Click(object sender, EventArgs e)
         {
-            index = 1;
+
         }
 
         private void Pic_Paint(object sender, PaintEventArgs e)
