@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btncolor = new System.Windows.Forms.Button();
             this.btnfill = new System.Windows.Forms.Button();
             this.btnline = new System.Windows.Forms.Button();
             this.btnrect = new System.Windows.Forms.Button();
@@ -36,7 +37,6 @@
             this.btneraser = new System.Windows.Forms.Button();
             this.btnpen = new System.Windows.Forms.Button();
             this.Pic = new System.Windows.Forms.PictureBox();
-            this.btncolor = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Pic)).BeginInit();
             this.SuspendLayout();
@@ -54,15 +54,28 @@
             this.panel1.Controls.Add(this.btneraser);
             this.panel1.Controls.Add(this.btnpen);
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(798, 77);
+            this.panel1.Size = new System.Drawing.Size(1140, 128);
             this.panel1.TabIndex = 0;
+            // 
+            // btncolor
+            // 
+            this.btncolor.Location = new System.Drawing.Point(989, 8);
+            this.btncolor.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btncolor.Name = "btncolor";
+            this.btncolor.Size = new System.Drawing.Size(137, 102);
+            this.btncolor.TabIndex = 6;
+            this.btncolor.Text = "кал";
+            this.btncolor.UseVisualStyleBackColor = true;
+            this.btncolor.Click += new System.EventHandler(this.btncolor_Click);
             // 
             // btnfill
             // 
-            this.btnfill.Location = new System.Drawing.Point(427, 12);
+            this.btnfill.Location = new System.Drawing.Point(610, 20);
+            this.btnfill.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnfill.Name = "btnfill";
-            this.btnfill.Size = new System.Drawing.Size(75, 46);
+            this.btnfill.Size = new System.Drawing.Size(107, 77);
             this.btnfill.TabIndex = 5;
             this.btnfill.Text = "подливка";
             this.btnfill.UseVisualStyleBackColor = true;
@@ -70,9 +83,10 @@
             // 
             // btnline
             // 
-            this.btnline.Location = new System.Drawing.Point(343, 12);
+            this.btnline.Location = new System.Drawing.Point(490, 20);
+            this.btnline.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnline.Name = "btnline";
-            this.btnline.Size = new System.Drawing.Size(57, 46);
+            this.btnline.Size = new System.Drawing.Size(81, 77);
             this.btnline.TabIndex = 4;
             this.btnline.Text = "лизочко";
             this.btnline.UseVisualStyleBackColor = true;
@@ -80,9 +94,10 @@
             // 
             // btnrect
             // 
-            this.btnrect.Location = new System.Drawing.Point(256, 12);
+            this.btnrect.Location = new System.Drawing.Point(366, 20);
+            this.btnrect.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnrect.Name = "btnrect";
-            this.btnrect.Size = new System.Drawing.Size(57, 46);
+            this.btnrect.Size = new System.Drawing.Size(81, 77);
             this.btnrect.TabIndex = 3;
             this.btnrect.Text = "ректальный";
             this.btnrect.UseVisualStyleBackColor = true;
@@ -90,9 +105,10 @@
             // 
             // btnellipse
             // 
-            this.btnellipse.Location = new System.Drawing.Point(176, 14);
+            this.btnellipse.Location = new System.Drawing.Point(251, 23);
+            this.btnellipse.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnellipse.Name = "btnellipse";
-            this.btnellipse.Size = new System.Drawing.Size(49, 46);
+            this.btnellipse.Size = new System.Drawing.Size(70, 77);
             this.btnellipse.TabIndex = 2;
             this.btnellipse.Text = "козлина";
             this.btnellipse.UseVisualStyleBackColor = true;
@@ -100,9 +116,10 @@
             // 
             // btneraser
             // 
-            this.btneraser.Location = new System.Drawing.Point(99, 14);
+            this.btneraser.Location = new System.Drawing.Point(141, 23);
+            this.btneraser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btneraser.Name = "btneraser";
-            this.btneraser.Size = new System.Drawing.Size(49, 46);
+            this.btneraser.Size = new System.Drawing.Size(70, 77);
             this.btneraser.TabIndex = 1;
             this.btneraser.Text = "jopa";
             this.btneraser.UseVisualStyleBackColor = true;
@@ -110,9 +127,10 @@
             // 
             // btnpen
             // 
-            this.btnpen.Location = new System.Drawing.Point(27, 12);
+            this.btnpen.Location = new System.Drawing.Point(39, 20);
+            this.btnpen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnpen.Name = "btnpen";
-            this.btnpen.Size = new System.Drawing.Size(49, 46);
+            this.btnpen.Size = new System.Drawing.Size(70, 77);
             this.btnpen.TabIndex = 0;
             this.btnpen.Text = "penis";
             this.btnpen.UseVisualStyleBackColor = true;
@@ -123,34 +141,27 @@
             this.Pic.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pic.Location = new System.Drawing.Point(0, 79);
+            this.Pic.Location = new System.Drawing.Point(0, 132);
+            this.Pic.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Pic.Name = "Pic";
-            this.Pic.Size = new System.Drawing.Size(798, 369);
+            this.Pic.Size = new System.Drawing.Size(1140, 615);
             this.Pic.TabIndex = 1;
             this.Pic.TabStop = false;
+            this.Pic.Click += new System.EventHandler(this.Pic_Click);
             this.Pic.Paint += new System.Windows.Forms.PaintEventHandler(this.Pic_Paint);
             this.Pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Pic_MouseClick);
             this.Pic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Pic_MouseDown);
             this.Pic.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Pic_MouseMove);
             this.Pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.Pic_MouseUp);
             // 
-            // btncolor
-            // 
-            this.btncolor.Location = new System.Drawing.Point(692, 5);
-            this.btncolor.Name = "btncolor";
-            this.btncolor.Size = new System.Drawing.Size(96, 61);
-            this.btncolor.TabIndex = 6;
-            this.btncolor.Text = "кал";
-            this.btncolor.UseVisualStyleBackColor = true;
-            this.btncolor.Click += new System.EventHandler(this.btncolor_Click);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1143, 750);
             this.Controls.Add(this.Pic);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "paint...";
             this.Load += new System.EventHandler(this.Form1_Load);
