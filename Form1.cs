@@ -51,7 +51,7 @@ namespace Paint_3._0
 
         private void btnline_Click(object sender, EventArgs e)
         {
-            index = 5;
+            index = 1;
         }
 
         private void Pic_Paint(object sender, PaintEventArgs e)
