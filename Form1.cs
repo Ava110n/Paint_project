@@ -35,14 +35,14 @@ namespace Paint_3._0
             Pic.Image = bm;
         }
 
-        private void btneraser_Click(object sender, EventArgs e)
-        {
-            index = 2;
-        }
+//         private void btneraser_Click(object sender, EventArgs e)
+//         {
+//             index = 5;
+//         }
 
         private void btnellipse_Click(object sender, EventArgs e)
         {
-            index = 1;
+            index = 7;
         }
 
         private void btnrect_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Paint_3._0
 
         private void btnline_Click(object sender, EventArgs e)
         {
-            index = 3;
+
         }
 
         private void Pic_Paint(object sender, PaintEventArgs e)
