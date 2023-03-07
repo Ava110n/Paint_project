@@ -35,10 +35,10 @@ namespace Paint_3._0
             Pic.Image = bm;
         }
 
-//         private void btneraser_Click(object sender, EventArgs e)
-//         {
-//             index = 5;
-//         }
+        private void btneraser_Click(object sender, EventArgs e)
+        {
+            index = 5;
+        }
 
         private void btnellipse_Click(object sender, EventArgs e)
         {
