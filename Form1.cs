@@ -36,7 +36,7 @@ namespace Paint_3._0
 
         private void btneraser_Click(object sender, EventArgs e)
         {
-            index = 2;
+            index = 5;
         }
 
         private void btnellipse_Click(object sender, EventArgs e)
@@ -137,6 +137,11 @@ namespace Paint_3._0
             New_Color = cd.Color;
             Pic.BackColor = cd.Color;
             p.Color = cd.Color;
+        }
+
+        private void Pic_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void Pic_MouseDown(object sender, MouseEventArgs e)
